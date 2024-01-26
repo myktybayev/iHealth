@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:ihealth/features/healthPage/health_screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -15,13 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text('Title'),
-        ),
-        body: Text('Home'),
-      ),
-    );
+      home: HealthScreen()
+      );
   }
 }
